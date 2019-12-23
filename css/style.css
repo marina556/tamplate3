@@ -1,0 +1,340 @@
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:active,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav,
+.about-h1,
+h4,
+.info i {
+	color: #a67ecf;
+}
+* {
+	box-sizing: border-box;
+}
+
+/***************************************************header of sections start***************************************************/
+.common-header {
+	position: relative;
+}
+
+.common-header::after {
+	content: "";
+	position: absolute;
+	width: 10%;
+	height: 3px;
+	background-color: #a67ecf;
+	top: 98%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.5s;
+}
+.common-header:hover:after,
+.common-header:active:after {
+	width: 15%;
+}
+
+/***************************************************header of sections end***************************************************/
+
+/***************************************************nav start***************************************************/
+.nav-item {
+	position: relative;
+}
+
+.nav-item::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background-color: #a67ecf;
+	left: 2px;
+	bottom: 6px;
+	transition: all 0.5s;
+}
+.nav-item:hover:after,
+.nav-item:active:after {
+	width: 90%;
+}
+.active-li::after {
+	width: 90%;
+}
+.active-li #nav-link1,
+.active-li #nav-link2,
+.active-li #nav-link3,
+.active-li #nav-link4,
+.active-li #nav-link5,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+	color: #a67ecf;
+}
+
+/***************************************************end of nav***************************************************/
+
+#carouselExampleIndicators {
+	margin-top: 50px;
+}
+.header {
+	background-color: white;
+	z-index: 100;
+	position: fixed;
+	top: 0;
+}
+
+/***************************************************start of about***************************************************/
+
+.about > p {
+	text-align: center;
+	margin: auto;
+}
+.about p,
+.info p {
+	color: rgba(0, 0, 0, 0.5);
+}
+.card-img {
+	height: 100%;
+}
+.card {
+	border: 0;
+}
+.overlay-container {
+	position: relative;
+}
+
+.overlay-container img {
+	width: 100%;
+}
+.fa-eye {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 2rem;
+	transition: all 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 50%;
+	transition: all 0.5s;
+	width: 50px;
+	height: 35px;
+	background-color: #a67ecf;
+	cursor: pointer;
+	text-align: center;
+	z-index: 50;
+	/* cursor: pointer; */
+}
+.overlay-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: all 0.5s;
+}
+
+.overlay-container:hover:before ,.overlay-container:active:before {
+	height: 100%;
+}
+.overlay-container:hover .fa-eye ,.overlay-container:active .fa-eye {
+	opacity: 1;
+	visibility: visible;
+}
+
+.card:not(.f-card) {
+	margin-top: 20px;
+}
+.card-body {
+	padding: 0.5rem 1.25rem 1.25rem;
+}
+
+.about-img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-radius: calc(0.25rem - 1px);
+}
+.about-img-p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 3;
+	padding: 2rem;
+	border-radius: calc(0.25rem - 1px);
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	margin: 0;
+	opacity: 0.6;
+	transition: all 0.5s;
+}
+.about-left {
+	padding: 0;
+	border-radius: calc(0.25rem - 1px);
+}
+
+.about-img-p:hover,
+.about-img-p:active {
+	opacity: 1;
+}
+.about .no-gutters {
+	height: 100%;
+}
+/***************************************************end of about***************************************************/
+
+/***************************************************start of Service***************************************************/
+.Service {
+	background-image: url(../Images/intro.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	height: 60vh;
+	position: relative;
+}
+
+.Service p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px white solid;
+	padding: 25px 35px;
+	color: white;
+}
+/***************************************************end of Service***************************************************/
+
+/***************************************************start of Product***************************************************/
+.Product img {
+	width: 100%;
+}
+
+.info .row {
+	min-height: 60vh;
+}
+
+.info p {
+	line-height: 2;
+}
+/***************************************************end of Product***************************************************/
+
+/***************************************************start of footer***************************************************/
+.footer {
+	position: relative;
+	min-height: 30vh;
+}
+
+.footer div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.footer i {
+	background-color: black;
+	color: white;
+	padding: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	transition: background-color 0.5s;
+	cursor: pointer;
+}
+
+.footer i:hover,
+.footer i:active {
+	background-color: gray;
+}
+/***************************************************end of footer***************************************************/
+
+/*************************************************** show image start***************************************************/
+#layout {
+	width: 100%;
+	height: 950%;
+	position: fixed;
+	top: 50px;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: all 0.5s;
+}
+
+#layout-img {
+	width: 60%;
+	height: 80vh;
+	margin: auto;
+	padding-top: 5%;
+	animation: zoom 1s;
+}
+#layout-info {
+	text-align: center;
+	font-size: 25px;
+	line-height: 5;
+	color: white;
+	animation: zoom 1s;
+}
+#layout span {
+	position: absolute;
+	top: 25px;
+	right: 35px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	transition: all 1s;
+	border-radius: 50%;
+	animation: zoom 1s;
+}
+#layout span:hover , #layout span:active  {
+	background-color: rgba(206, 79, 79, 0.6);
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/*************************************************** show image end***************************************************/
+
+/*************************************************** media query start***************************************************/
+@media (max-width: 991px) {
+	.about-right {
+		padding: 0;
+	}
+
+	.about-left {
+		margin-bottom: 1rem;
+	}
+	.f-card-left {
+		margin: 0;
+		margin-bottom: 4rem;
+		padding: 0;
+	}
+	.product-img {
+		margin-bottom: 3rem;
+	}
+	.card-badding {
+		padding: 0 15px;
+	}
+
+	.nav-item::after {
+		left: -4px;
+	}
+	.nav-item:hover:after,
+	.nav-item:active:after {
+		width: 20%;
+	}
+	.active-li::after {
+		width: 20%;
+	}
+}
+/*************************************************** media query end***************************************************/
