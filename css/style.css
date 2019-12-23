@@ -336,5 +336,36 @@ h4,
 	.active-li::after {
 		width: 20%;
 	}
+
+	#layout span{
+		width: 110px;
+		height: 128px;
+		font-size: 70px;
+		background-color: rgba(206, 79, 79, 0.6);
+
+	}
+	.fa-eye{
+		width: 135px;
+		height: 79px;
+		font-size: 70px;
+	}
+
 }
+/* 
+@media (max-width: 362px) {
+	
+	#layout span{
+		width: 110px;
+		height: 110px;
+		font-size: 4rem;
+		background-color: rgba(206, 79, 79, 0.6);
+
+	}
+	.fa-eye{
+		width: 135px;
+		height: 92px;
+		font-size: 5rem;
+	}
+} */
+
 /*************************************************** media query end***************************************************/
